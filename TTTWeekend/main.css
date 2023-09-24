@@ -1,0 +1,99 @@
+body {
+    display: grid;
+    grid-template-rows: 20% 200px 200px 200px 20%;
+    grid-template-columns: 20% 200px 200px 200px 20%;
+}
+
+.heading, .button {
+    justify-self: center;
+    align-self: center;
+}
+
+.heading {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 20px;
+}
+
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+    outline: auto;
+    outline-color: black;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+}
+
+.tile1, .tile2, .tile3 {
+    grid-row-start: 2;
+    grid-row-end: 3;   
+}
+
+.tile4, .tile5, .tile6 {
+    grid-row-start: 3;
+    grid-row-end: 4;   
+}
+
+.tile7, .tile8, .tile9 {
+    grid-row-start: 4;
+    grid-row-end: 5;   
+}
+
+.tile1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.tile2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.tile3 {
+    grid-column-start: 4;
+    grid-column-end: 5;    
+}
+
+.tile4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.tile5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.tile6 {
+    grid-column-start: 4;
+    grid-column-end: 5;    
+}
+
+.tile7 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.tile8 {
+    grid-column-start: 3;
+    grid-column-end: 4;    
+}
+
+.tile9 {
+    grid-column-start: 4;
+    grid-column-end: 5;     
+}
+
+.button {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: center;
+    align-self: center;
+    font-size: 40px;
+}
